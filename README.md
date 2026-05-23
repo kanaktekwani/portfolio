@@ -1,9 +1,8 @@
 # Kanak 3D Portfolio
 
-A bold one-page 3D portfolio built with React, TypeScript, Vite, Three.js,
-React Three Fiber, and GSAP. The site keeps the cloned starter's character
-scene and scroll animation foundation, then reshapes the visible content into a
-Kanak-branded creative developer portfolio.
+This is my personal 3D portfolio site. I built it with React, TypeScript, Vite,
+Three.js, React Three Fiber, and GSAP, and customized it around my work in
+backend systems, cloud infrastructure, AI applications, and automation.
 
 ## Features
 
