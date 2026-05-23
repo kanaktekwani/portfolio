@@ -10,13 +10,14 @@ const setCharacter = (
 ) => {
   const loader = new GLTFLoader();
   const dracoLoader = new DRACOLoader();
-  dracoLoader.setDecoderPath("/draco/");
+  const assetPath = (path: string) => `${import.meta.env.BASE_URL}${path}`;
+  dracoLoader.setDecoderPath(assetPath("draco/"));
   loader.setDRACOLoader(dracoLoader);
 
   const loadCharacter = async () => {
     try {
       const encryptedBlob = await decryptFile(
-        "/models/character.enc?v=2",
+        assetPath("models/character.enc?v=2"),
         "MyCharacter12"
       );
       const blobUrl = URL.createObjectURL(new Blob([encryptedBlob]));
