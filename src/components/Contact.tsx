@@ -30,7 +30,7 @@ const Contact = () => {
           <div className="contact-box">
             <h4>Social</h4>
             <a
-              href="https://github.com/kanak"
+              href="https://github.com/kanaktekwani"
               target="_blank"
               rel="noreferrer"
               data-cursor="disable"

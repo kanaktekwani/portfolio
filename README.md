@@ -1,30 +1,58 @@
-# Kanak 3D Portfolio
+# Kanak Tekwani Portfolio
 
-This is my personal 3D portfolio site. I built it with React, TypeScript, Vite,
-Three.js, React Three Fiber, and GSAP, and customized it around my work in
-backend systems, cloud infrastructure, AI applications, and automation.
+Professional 3D portfolio for Kanak Tekwani, a software engineer focused on
+backend systems, cloud infrastructure, AI-enabled applications, and automation.
 
 Live site: https://kanaktekwani.github.io/portfolio/
 
-## Features
+## Highlights
 
-- Full-screen 3D character scene with React Three Fiber.
+- Full-screen 3D character scene built with Three.js and React Three Fiber.
 - GSAP-powered intro, scroll, and section transitions.
-- Responsive portfolio sections for about, services, career log, work, and contact.
-- Custom cursor, social rail, animated project carousel, and interactive tech stack.
+- Responsive sections for background, skills, career trajectory, featured work,
+  and contact.
+- Featured project carousel covering AI voice verification, LLM video search,
+  and cloud infrastructure automation.
+- Custom cursor, animated social rail, and interactive technology stack.
 
-## Scripts
+## Tech Stack
+
+- React 18
+- TypeScript
+- Vite
+- Three.js / React Three Fiber
+- GSAP
+- GitHub Pages
+
+## Run Locally
 
 ```bash
 npm install
 npm run dev
-npm run build
-npm run preview
 ```
 
-## Customization
+## Production Build
 
-- Main content: `src/components/`
-- Styling: `src/components/styles/`, `src/index.css`, and `src/App.css`
-- 3D scene: `src/components/Character/`
-- Static assets: `public/`
+```bash
+npm run build
+```
+
+For GitHub Pages:
+
+```bash
+npm run build:pages
+```
+
+## Project Structure
+
+- `src/components/` - Portfolio sections and interactive UI.
+- `src/components/Character/` - 3D scene setup, lighting, animation, and model
+  loading.
+- `src/components/styles/` - Component-level styles.
+- `public/` - Static assets, encrypted model files, Draco decoder, and images.
+
+## Repository Purpose
+
+This repository is the source for my resume-facing portfolio site. It is meant
+to show front-end polish while highlighting the backend, AI, and cloud systems I
+build.

@@ -58,7 +58,7 @@ const Career = () => {
             <div className="career-info-in">
               <div className="career-role">
                 <h4>Learning Loop</h4>
-                <h5>Build • Break • Improve</h5>
+                <h5>Build / Break / Improve</h5>
               </div>
               <h3>ALWAYS</h3>
             </div>
