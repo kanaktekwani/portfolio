@@ -1,6 +1,6 @@
 .work-section {
   position: relative;
-  z-index: 1;
+  z-index: 20;
   background-color: var(--backgroundColor);
   padding: 96px 0;
 }
@@ -43,15 +43,19 @@
   flex-shrink: 0;
   box-sizing: border-box;
   padding: 58px 0;
+  overflow: hidden;
 }
 
 .carousel-content {
   --project-accent: var(--accentColor);
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.95fr);
+  grid-template-columns: minmax(430px, 1fr) minmax(280px, 0.78fr);
   align-items: center;
-  gap: 58px;
+  gap: 42px;
   width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .carousel-info {
@@ -144,8 +148,12 @@
 .project-visual {
   position: relative;
   aspect-ratio: 1.2;
-  min-height: 320px;
+  min-height: 280px;
+  max-height: 560px;
+  max-width: 560px;
   width: 100%;
+  min-width: 0;
+  justify-self: end;
   overflow: hidden;
   border: 1px solid color-mix(in srgb, var(--project-accent), transparent 48%);
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), transparent),
@@ -191,7 +199,7 @@
   top: 58px;
   left: 18px;
   right: 18px;
-  font-size: clamp(28px, 5vw, 62px);
+  font-size: clamp(28px, 4.2vw, 58px);
   line-height: 0.9;
   font-weight: 800;
   color: transparent;
@@ -333,7 +341,13 @@
   }
 
   .carousel-content {
-    gap: 40px;
+    grid-template-columns: minmax(380px, 1fr) minmax(260px, 0.7fr);
+    gap: 32px;
+  }
+
+  .project-visual {
+    min-height: 240px;
+    max-width: 460px;
   }
 
   .carousel-arrow-left {
@@ -357,6 +371,8 @@
 
   .project-visual {
     min-height: 280px;
+    max-width: 100%;
+    justify-self: stretch;
   }
 
   .carousel-arrow {
